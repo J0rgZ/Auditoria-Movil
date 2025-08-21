@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobile.brasiltv.view.AutoHideRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mLiveControlPanelPortrait" android:background="@drawable/bg_play_fullscreen_shadow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@+id/llMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/mDebugSwitch" android:visibility="gone" android:layout_width="40px" android:layout_height="40px" android:layout_marginTop="30px" android:layout_marginRight="15px" android:src="@mipmap/close" android:scaleType="fitCenter"/>
+            <ImageView android:id="@+id/mImageShare" android:paddingLeft="25px" android:paddingTop="25px" android:paddingRight="25px" android:paddingBottom="13px" android:layout_width="94px" android:layout_height="82px" android:src="@mipmap/icon_share_live"/>
+            <ImageView android:id="@+id/mImageFeedback" android:paddingLeft="25px" android:paddingTop="25px" android:paddingRight="25px" android:paddingBottom="13px" android:layout_width="94px" android:layout_height="82px" android:src="@drawable/ic_feedback"/>
+            <ImageView android:id="@+id/mIvPortQuality" android:paddingLeft="25px" android:paddingTop="29px" android:paddingRight="25px" android:paddingBottom="17px" android:visibility="gone" android:layout_width="102px" android:layout_height="82px" android:src="@drawable/ic_quality_480p"/>
+            <ImageView android:id="@+id/mIvFavPort" android:paddingLeft="25px" android:paddingTop="28px" android:paddingRight="25px" android:paddingBottom="16px" android:layout_width="95px" android:layout_height="82px" android:src="@drawable/ic_live_not_fav"/>
+            <ImageView android:id="@+id/mIconCastPort" android:paddingLeft="25px" android:paddingTop="29px" android:paddingRight="25px" android:paddingBottom="17px" android:visibility="gone" android:layout_width="94px" android:layout_height="82px" android:src="@drawable/icon_cast"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <ImageView android:id="@+id/mIconSilence" android:padding="15px" android:focusable="true" android:clickable="true" android:layout_width="72px" android:layout_height="70px" android:layout_marginLeft="15px" android:layout_marginBottom="15px" android:src="@drawable/ic_live_volume_on" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/mIconFullscreen" android:padding="15px" android:focusable="true" android:clickable="true" android:layout_width="74px" android:layout_height="70px" android:layout_marginRight="15px" android:layout_marginBottom="15px" android:src="@drawable/ic_live_fullscreen" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.mobile.brasiltv.view.AutoHideRelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/slItemContent" android:paddingLeft="100px" android:paddingRight="454px" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100px">
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40px" android:layout_marginTop="15px" android:layout_marginRight="50px">
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="80px">
+                <TextView android:textSize="30px" android:textColor="@color/color_important" android:paddingTop="5px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"/>
+                <TextView android:textSize="28px" android:textColor="@color/ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8px" android:layout_marginRight="12px" android:text="@string/content_name"/>
+                <TextView android:textSize="26px" android:textColor="@color/color_999999" android:id="@+id/tvContentTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <ImageView android:id="@+id/ivTitleEdit" android:padding="10px" android:layout_width="60px" android:layout_height="60px" android:src="@mipmap/ic_feedback_edit"/>
+                <EditText android:textSize="26px" android:textColor="@color/color_333333" android:id="@+id/etContentTitle" android:background="@drawable/shape_edit_withe_comment" android:paddingLeft="10px" android:paddingRight="10px" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <View android:background="@color/color_666666" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="13px"/>
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15px">
+                <TextView android:textSize="30px" android:textColor="@color/color_important" android:paddingTop="5px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"/>
+                <TextView android:textSize="32px" android:textColor="@color/ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8px" android:layout_marginRight="12px" android:text="@string/description"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <EditText android:textSize="26px" android:textColor="@color/color_333333" android:gravity="left" android:id="@+id/etDes" android:background="@drawable/shape_edit_withe_comment" android:padding="10px" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15px" android:minHeight="150px" android:maxLength="2000"/>
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15px">
+                <TextView android:textSize="30px" android:textColor="@color/color_important" android:paddingTop="5px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"/>
+                <TextView android:textSize="32px" android:textColor="@color/ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8px" android:layout_marginRight="12px" android:text="@string/email"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@+id/mLlEmailFullEdit" android:background="@drawable/shape_edit_withe_comment" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="26px" android:textColor="@color/color_333333" android:id="@+id/etEmail" android:background="@null" android:paddingLeft="10px" android:paddingRight="10px" android:layout_width="0dp" android:layout_height="80px" android:layout_marginTop="15px" android:layout_weight="1" android:inputType="textEmailAddress" android:imeOptions="actionDone"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/mIvContentClear" android:visibility="gone" android:layout_width="30px" android:layout_height="30px" android:layout_marginLeft="20px" android:layout_marginRight="20px" android:src="@drawable/ic_edit_clear_new" android:scaleType="fitXY"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+                <TextView android:textSize="24px" android:textColor="@color/color_common_error" android:id="@+id/tvError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="107px" android:layout_marginBottom="40px"/>
+                <com.mobile.brasiltv.view.MaxHeightLinearLayout android:id="@+id/mLlContentEmail" android:background="@drawable/bg_associate_email" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2px" android:layout_marginBottom="20px" android:layout_below="@+id/mLlEmailFullEdit" android:layout_centerHorizontal="true" app:forceMaxHeight="440px">
+                    <com.mobile.brasiltv.view.MaxHeightRecyclerView android:scrollbarSize="4dp" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideOverlay" android:id="@+id/mRvContentList" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" android:overScrollMode="always" app:maxHeight="440px"/>
+                </com.mobile.brasiltv.view.MaxHeightLinearLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</merge>

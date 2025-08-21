@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoRelativeLayout android:id="@+id/mLayoutHeader" android:background="@drawable/bg_mine_header" android:layout_width="match_parent" android:layout_height="340px">
+        <ImageView android:id="@+id/ivMessage" android:layout_width="48px" android:layout_height="48px" android:layout_marginTop="108px" android:layout_marginRight="32px" android:src="@drawable/icon_mine_notice" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="18px" android:textColor="@color/ffffff" android:gravity="center" android:id="@+id/mTvMsgCount" android:background="@drawable/bg_mine_notice" android:paddingLeft="6px" android:paddingRight="6px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32px" android:layout_marginBottom="32px" android:minWidth="24px" android:layout_alignLeft="@+id/ivMessage" android:layout_alignBottom="@+id/ivMessage"/>
+        <com.zhy.autolayout.AutoRelativeLayout android:id="@+id/mLayoutTop" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="156px" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" android:elevation="4px">
+            <ImageView android:id="@+id/mImageAvatar" android:layout_width="108px" android:layout_height="108px" android:layout_marginLeft="32px" android:src="@drawable/icon_mine_avatar_new" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="36px" android:textColor="@color/ffffff" android:id="@+id/mTvUserNameNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21px" android:layout_marginTop="18px" android:text="123557893456" android:layout_toRightOf="@+id/mImageAvatar" android:layout_alignTop="@+id/mImageAvatar"/>
+            <TextView android:textSize="20px" android:textColor="@color/color_aaaaaa" android:id="@+id/mTvUserIdNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21px" android:text="8013323" android:layout_toRightOf="@+id/mImageAvatar" android:layout_below="@+id/mTvUserNameNew"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@+id/mLayoutFavAndHistory" android:layout_width="match_parent" android:layout_height="120px" android:layout_marginLeft="32px" android:layout_marginTop="-15px" android:layout_marginRight="32px">
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mLayoutFav" android:background="@drawable/bg_mine_menu" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="48px" android:layout_height="48px" android:src="@drawable/icon_mine_fav_new" android:scaleType="fitXY"/>
+            <TextView android:textSize="24px" android:textColor="@color/ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8px" android:text="@string/mine_fav"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mLayoutHistory" android:background="@drawable/bg_mine_menu" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10px" android:layout_weight="1">
+            <ImageView android:layout_width="48px" android:layout_height="48px" android:src="@drawable/icon_mine_history_new" android:scaleType="fitXY"/>
+            <TextView android:textSize="28px" android:textColor="@color/ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8px" android:text="@string/mine_history"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mLayoutShare" android:background="@drawable/bg_mine_menu" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10px" android:layout_weight="1">
+            <ImageView android:layout_width="48px" android:layout_height="48px" android:src="@drawable/icon_person_share" android:scaleType="fitXY"/>
+            <TextView android:textSize="28px" android:textColor="@color/ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8px" android:text="@string/mine_share_app"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

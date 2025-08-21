@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/leftCon" android:layout_width="wrap_content" android:layout_height="75px" android:layout_weight="1">
+        <TextView android:gravity="center" android:id="@+id/leftText" android:paddingTop="0dp" android:layout_width="wrap_content" android:layout_height="75px" android:text="Hello World!" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/leftViewBack" android:background="@color/color_2e2e33" android:layout_width="wrap_content" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        <View android:id="@+id/leftIndex" android:background="@color/color_2e2e33" android:layout_width="match_parent" android:layout_height="2px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rightCon" android:layout_width="wrap_content" android:layout_height="75px" android:layout_weight="1">
+        <TextView android:gravity="center" android:id="@+id/rightText" android:paddingTop="0dp" android:layout_width="wrap_content" android:layout_height="75px" android:text="Hello World!" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/rightViewBack" android:background="@color/color_2e2e33" android:layout_width="wrap_content" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        <View android:id="@+id/rightIndex" android:background="@color/color_2e2e33" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mNestedScrollViewNew" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/mLayoutFavAndHistory">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="parallax">
+        <include android:id="@+id/mCollapsingToolbarNew" android:visibility="visible" layout="@layout/layout_mine_header_new"/>
+        <include layout="@layout/layout_mine_scrollview_new"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.mobile.brasiltv.view.AutoCardView android:id="@+id/mAcvNum" android:layout_width="40px" android:layout_height="40px" app:cardBackgroundColor="@color/color_b3000000" app:cardCornerRadius="2dp" app:cardElevation="0dp">
+        <TextView android:textSize="28px" android:textStyle="bold" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/mTvNum" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.mobile.brasiltv.view.AutoCardView>
+    <TextView android:textSize="28px" android:textColor="@color/color_ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/mTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15px" android:singleLine="true"/>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@+id/mAllVipAndInvite" android:layout_width="match_parent" android:layout_height="100px" android:layout_marginLeft="22px" android:layout_marginTop="33px" android:layout_marginRight="22px" android:layout_marginBottom="30px">
+        <com.zhy.autolayout.AutoFrameLayout android:id="@+id/mAflJoinVip" android:background="@drawable/bg_mine_join_vip" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="32px" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/mTvJoinVip" android:paddingLeft="20px" android:paddingRight="20px" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mine_join_vip"/>
+        </com.zhy.autolayout.AutoFrameLayout>
+        <View android:id="@+id/mVVipAndInvite" android:layout_width="23px" android:layout_height="match_parent"/>
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/mInviteFriendWrapper" android:background="@drawable/bg_mine_invite_friend" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="32px" android:textColor="@color/color_important_white" android:gravity="center_vertical" android:id="@+id/mTvInviteFriend" android:paddingLeft="11px" android:paddingRight="20px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_invite_friend"/>
+            <TextView android:textSize="24px" android:textColor="@color/color_fae94b" android:gravity="center_vertical" android:id="@+id/mTvWithdraw" android:paddingLeft="11px" android:paddingRight="20px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_go_withdraw"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@+id/mLayoutFavAndHistory" android:background="@drawable/bg_mine_menu" android:layout_width="match_parent" android:layout_height="100px" android:layout_marginLeft="22px" android:layout_marginRight="22px">
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/mLayoutFav" android:layout_width="350px" android:layout_height="match_parent">
+            <ImageView android:layout_width="50px" android:layout_height="50px" android:src="@drawable/icon_mine_fav" android:scaleType="fitXY"/>
+            <TextView android:textSize="30px" android:textColor="@color/ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15px" android:text="@string/mine_fav"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View android:layout_gravity="center_vertical" android:background="@color/color_191a23" android:layout_width="1px" android:layout_height="84px"/>
+        <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/mLayoutHistory" android:layout_width="350px" android:layout_height="match_parent">
+            <ImageView android:layout_width="50px" android:layout_height="50px" android:src="@drawable/icon_mine_history" android:scaleType="fitXY"/>
+            <TextView android:textSize="30px" android:textColor="@color/ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15px" android:text="@string/mine_history"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/mLayoutOption1" android:background="@drawable/bg_mine_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22px" android:layout_marginTop="30px" android:layout_marginRight="22px">
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutAccount" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/icon_mine_account" app:menuName="@string/mine_account" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+        <View android:background="@color/color_191a23" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutPlayList" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/icon_mine_playlist" app:menuName="@string/playlist_title" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+        <ImageView android:id="@+id/mIvPlaylistLine" android:layout_width="match_parent" android:layout_height="1px" android:src="@color/color_191a23"/>
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutOrder" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/icon_mine_order" app:menuName="@string/mine_order" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+        <ImageView android:id="@+id/mIvOrderLine" android:layout_width="match_parent" android:layout_height="1px" android:src="@color/color_191a23"/>
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutReward" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/ic_menu_activity" app:menuName="@string/mine_reward_center" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+        <View android:background="@color/color_191a23" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mMiBenefit" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/ic_menu_benefit" app:menuName="@string/mine_menu_benefit" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+        <View android:background="@color/color_191a23" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.mobile.brasiltv.view.setting.MenuSwitchItem android:id="@+id/mLayoutBlock" android:background="@drawable/bg_mine_menu" android:layout_width="match_parent" android:layout_height="90px" app:menuSwitchIcon="@drawable/icon_mine_block" app:menuSwitchName="@string/mine_block" app:menuSwitchSelector="@drawable/selector_switch_block"/>
+        <ImageView android:id="@+id/mIvBlockLine" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:src="@color/color_191a23"/>
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutLanguage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/icon_mine_language" app:menuName="@string/mine_language" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/mLayoutOption2" android:background="@drawable/bg_mine_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22px" android:layout_marginTop="24px" android:layout_marginRight="22px" android:layout_marginBottom="24px">
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutHelp" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/icon_mine_help" app:menuName="@string/mine_help" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+        <View android:background="@color/color_191a23" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutSetting" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/ic_menu_setting" app:menuName="@string/mine_setting" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+        <View android:background="@color/color_191a23" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutSubtitle" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/ic_menu_subtitle" app:menuName="@string/mine_subtitle" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+        <View android:background="@color/color_191a23" android:layout_width="match_parent" android:layout_height="1px"/>
+        <com.mobile.brasiltv.view.setting.MenuItem android:id="@+id/mLayoutShareApp" android:layout_width="match_parent" android:layout_height="90px" app:menuIcon="@drawable/ic_menu_share" app:menuName="@string/mine_share_app" app:menuRightIcon="@drawable/icon_mine_arrow"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

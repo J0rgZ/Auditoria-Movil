@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="160px">
+    <TextView android:textSize="30px" android:textColor="@color/color_1a1a1a" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <com.zhy.autolayout.AutoFrameLayout android:id="@+id/mFlTag" android:background="@drawable/icon_plan_premium" android:visibility="visible" android:layout_width="110px" android:layout_height="36px" android:layout_marginLeft="14px" android:layout_marginTop="-18px" android:layout_toRightOf="@+id/tvName" android:layout_alignTop="@+id/tvName">
+        <TextView android:textSize="18px" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/mTvTag" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.zhy.autolayout.AutoFrameLayout>
+    <ImageView android:id="@+id/ivState" android:layout_width="29px" android:layout_height="19px" android:layout_marginRight="30px" android:src="@drawable/ic_green_gou" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/color_1f202a" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mobile.brasiltv.view.TitleView android:id="@+id/titleView" android:layout_width="match_parent" android:layout_height="wrap_content" app:titleViewTitle="@string/binding_account"/>
+        <com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="100px"/>
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@+id/mailBindPage" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24px" android:layout_marginRight="24px">
+            <com.mobile.brasiltv.view.input.EmailPrefixInputView android:id="@+id/mEpiEmail" android:layout_width="match_parent" android:layout_height="90px" android:layout_marginTop="20px" app:emailInputClearIcon="@drawable/ic_edit_clear" app:emailInputHint="@string/be_please_input_email" app:emailInputTextColor="@color/color_ffffff"/>
+            <com.mobile.brasiltv.view.login.VerifyCodeView android:id="@+id/mVcvVerifyCode" android:layout_width="match_parent" android:layout_height="90px" android:layout_marginTop="20px" app:vcInputHint="@string/be_please_input_verify_code"/>
+            <TextView android:enabled="false" android:textSize="15sp" android:textStyle="bold" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@+id/mTvConfirm" android:background="@drawable/selector_btn_login" android:layout_width="match_parent" android:layout_height="100px" android:layout_marginTop="80px" android:text="@string/confirm"/>
+            <TextView android:textSize="13sp" android:textColor="@color/color_f23232" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/mTvErrorHint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView android:textColor="@color/color_f23232" android:layout_gravity="center_horizontal" android:id="@+id/errorTx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Please agree"/>
+    <ProgressBar android:id="@+id/mLoadingPbar" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+</com.zhy.autolayout.AutoRelativeLayout>
